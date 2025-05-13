@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speechlab_mcp"
+version = "0.1.0"
+authors = [
+    {name = "Speechlab Team", email = "info@speechlab.ai"},
+]
+description = "Speechlab MCP - Claude Plugin for speechlab.ai dubbing operations"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "httpx>=0.23.0",
+    "python-dotenv>=0.21.0",
+    "mcp-api-client>=0.1.0",
+    "pydantic>=1.9.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/speechlab/speechlab-mcp"
+"Bug Tracker" = "https://github.com/speechlab/speechlab-mcp/issues"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88 
